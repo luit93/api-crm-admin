@@ -1,0 +1,21 @@
+//user apis
+
+### get admin user
+
+GET  http://localhost:8000/api/v1/admin-user
+
+
+
+### create admin user
+
+POST  http://localhost:8000/api/v1/admin-user
+Content-Type: application/json
+
+{
+    "fName":"neil",
+    "lName":"gaiman",
+    "email":"neil@luit.com",
+    "password":"mmmmmmml",
+    "phone":"1212121212991"
+
+}
