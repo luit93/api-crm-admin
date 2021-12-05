@@ -18,7 +18,7 @@ Router.post("/", newAdminUserFormValidation, async (req, res, next) => {
     user._id
       ? res.json({
           status: "success",
-          message: "Admin user create sucessfully",
+          message: "Admin user created sucessfully",
         })
       : res.json({
           status: "Error",

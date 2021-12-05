@@ -17,5 +17,17 @@ Content-Type: application/json
     "email":"neil@luit.com",
     "password":"mmmmmmml",
     "phone":"1212121212991"
+}
+
+### login admin user
+
+POST  http://localhost:8000/api/v1/login
+Content-Type: application/json
+
+{
+    
+    "email":"neil@luit.com",
+    "password":"mmmmmmml"
+   
 
 }

@@ -1,3 +1,4 @@
+// import { date } from "joi";
 import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
@@ -44,6 +45,16 @@ const AdminUserSchema = new Schema(
       required: true,
       maxLength: 30,
       default: "developer", // admin, developer, customerService
+    },
+    refreshJWT: {
+      addedAt: {
+        type: Date,
+        default: Date.now(),
+      },
+      token: {
+        type: String,
+        maxLength: 500,
+      },
     },
   },
   {

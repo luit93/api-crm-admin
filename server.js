@@ -17,12 +17,14 @@ app.use(express.urlencoded({ extended: true })); //for sending form data or mixe
 
 //load routers
 import adminRouter from "./src/routers/admin.router.js";
+import loginRouter from "./src/routers/login.router.js";
 //user routes
 app.listen(PORT, (error) => {
   if (error) console.log(error);
   console.log(`Server is ready at http://localhost:${PORT}`);
 });
 app.use("/api/v1/admin-user", adminRouter);
+app.use("/api/v1/login", loginRouter);
 app.use("/", (req, res, next) => {
   res.send("ok");
 });
